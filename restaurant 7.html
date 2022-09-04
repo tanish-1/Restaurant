@@ -1,0 +1,321 @@
+<html>
+<head>
+<style>
+@media(min-width:980px)
+{
+body{
+background-color:white;
+}
+}
+@media(max-width:600px)
+{
+body{
+background-color:white;
+}
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+  
+   
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+  z-index: -1;
+ opacity: 0.7;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('piz2.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+#services{
+    margin: 34px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+     
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+#item .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 200px 550px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 30px;
+}
+
+#item .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+   border-radius: 30px;
+      top:0px;
+    left:0px;
+    width: 100%;
+     object-fit:cover;
+}
+
+#item .box h2{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+</style>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+    <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
+    
+
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#Our Specials">Our Specials</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Fresh & Fast Food<br>Street Food</h1>
+        <p> </p>
+        <p> </p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container" data-aos="fade-right">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box" data-aos="fade-left">
+                <img src="piz3.jpg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center"></p>
+            </div>
+            <div class="box" data-aos="ease-out">
+                <img src="food4.jpg" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center"></p>
+            </div>
+            <div class="box" data-aos="fade-right">
+                <img src="guy.jpg" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center"></p>
+            </div>
+        </div>
+    </section>
+    <section id="Our Specials" data-aos="zoom-in">
+        <h1 class="h-primary center">Our specials</h1>
+        <div id="item">
+            <div class="box" data-aos="zoom-in-right">
+               <img src="peppy2.jpg" alt="Our Specials">
+                 <h2 class="center">Peppy<br>Panner Pizza</p>
+               <button class="btn">Rs.299/</button>
+            </div>
+            <div class="box" data-aos="zoom-in-up">
+                <img src="vada.jpg" alt="Our Specials">
+               <h2 class="center">Panner Supreme<br>Vada Pav</p>
+               <button class="btn">Rs.65/</button>
+            </div>
+            <div class="box" data-aos="zoom-in-right">
+                <img src="tt.jpg" alt="Our Specials" >
+               <h2 class="center">Tteokbokki</p>
+               <button class="btn">Rs.220/</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" data-aos="slide-up">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+        </div>
+    </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+           offset:120,
+            duration:1000,
+             });
+  </script>
+</body>
+
+</html>
